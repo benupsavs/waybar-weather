@@ -14,7 +14,7 @@ sudo apt install python3-requests python3-platformdirs
 
 The following method uses Python 3's builtin venv module to store dependencies in their own environment.
 ```bash
-cd ~/.config/waybar/weather
+cd ~/.config/waybar/waybar-weather
 python -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 If you used the venv method above, you can copy and paste this verbatim.
 ```
     "custom/weather": {
-        "exec": "$HOME/.config/waybar/weather/venv/bin/python $HOME/.config/waybar/weather/weather.py 2>/dev/null",
+        "exec": "$HOME/.config/waybar/waybar-weather/venv/bin/python $HOME/.config/waybar/waybar-weather/weather.py 2>/dev/null",
         "format": "{}",
         "tooltip": true,
         "interval": 3600,
